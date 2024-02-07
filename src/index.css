@@ -11,3 +11,150 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+// Add these styles in your component or a separate stylesheet
+
+.video-list-container {
+    margin-top: 20px;
+}
+
+.video-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+.video-item {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.video-buttons {
+    margin-top: 5px;
+}
+
+button {
+    margin-right: 5px;
+}
+// Add these styles in your component or a separate stylesheet
+
+/* src/components/videoUploader/VideoList/VideoList.js */
+.video-list-container {
+    margin-top: 20px;
+}
+
+.video-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+/* src/components/videoUploader/VideoList/VideoListItem.js */
+.video-item {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-buttons {
+    margin-top: 5px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+.bookmarked {
+    color: green; /* You can change the color based on your preference */
+}
+/* Overall layout */
+.video-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* VideoList */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* VideoListItem */
+.video-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn.delete-btn {
+    background-color: #e74c3c; /* Red color for delete button */
+}
+
+.btn.bookmarked {
+    background-color: #27ae60; /* Green color for bookmarked button */
+}
+
+.btn:hover {
+    filter: brightness(1.2); /* Slightly increase brightness on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .video-list {
+        flex-direction: column;
+    }
+}
+/* Add these styles for VideoList */
+.video-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness and wrap to the next line if needed */
+}
+
+/* Additional styles for each VideoListItem (if needed) */
+.video-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .video-list {
+        flex-direction: column; /* Stack videos vertically on smaller screens */
+    }
+}
+body {
+  background-color: #f2f2f2; /* Set your desired background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+

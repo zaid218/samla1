@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0; /* Remove default body margin */
+}
+
+.App {
+  min-height: 100vh; /* Ensure the app takes up at least the full height of the viewport */
+  background-color: #000000; /* Set the background color to black */
+  color: #ffffff; /* Set the text color to white */
+}
